@@ -1,0 +1,338 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* ------------Navigation_Top Starts---------- */
+.Navigation_Top{
+    background-color: aliceblue;
+    display: flex;
+    margin:auto;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between; 
+    padding: 19.2px 191px 27.9px 190px;
+
+}
+    /* ----Navigation_Top_Left---- */
+    .Navigation_Top_Left{
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+        /* -------Inside of Navigation_Top_Centre------- */
+        .Navigation_Top_Left_logo{
+            margin: 7.8px 3.14px 0 0;
+        }
+        .Navigation_Top_Left_DEV{
+            color:  #f10f85;
+        }
+        .Navigation_Top_Left_CENTRE{
+            margin-right: 30px;
+        }
+        /* ----------------------------------------------- */
+
+    /*  -----Navigation_Top_Centre------ */
+    .Navigation_Top_Centre{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+        /* -------Inside of Navigation_Top_Centre------- */
+        .Navigation_Top_Centre_LifeCycle{
+            margin: 0 50px;
+        }
+        .Navigation_Top_Centre_StarterKits{
+            margin: 0 50px;
+        }
+        .Navigation_Top_Centre_DevJourney{
+            margin: 0 50px;
+        }
+        .Navigation_Top_Centre_Resources{
+            margin: 0 50px;
+        }
+        .Navigation_Top_Centre_Community{
+            margin: 0 50px;
+        }
+        /* ----------------------------------------------- */
+
+
+    /*  ------ Navigation_Top_Right ----- */
+    .Navigation_Top_Right{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+        /* ------ Inside of .Navigation_Top_Right------ */
+        .Navigation_Top_Right_logo{
+            margin: 0 2px 2px 0;
+        }
+        .Navigation_Top_Right_Jason{
+            margin: 0 19px 0 0;
+            font-size: 14px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.5;
+            letter-spacing: normal;
+            text-align: left;
+            color: #4b4d61;
+        }
+        .Navigation_Top_Right_Group{
+            margin: 1px 0 2px 19px;
+        }
+        /* --------------------------------------------- */
+
+/* ------------Navigation_Top Ended---------- */
+
+/* -----  Main Section which conatins left bar and Right bar  starts------- */
+.Main_Section{
+    display: flex;
+    flex-direction: row;
+}
+
+    /* ----------------------Left Bar--------------- */
+    .Main_Left{
+        width: 60px;
+        margin: 80px 0 0 0;
+        /* padding: 10px; */
+
+    }
+        /* ----------Inside Left Bar Section ----------- */
+        .Main_Left_Your{
+            margin: 0 18px 13px 17px;
+            font-size: 12px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: center;
+            color: #979797;
+
+        }
+            /* Inside Main Left Your */
+
+        .Main_Left_Projects{
+            display: flex;
+            flex-direction: column;
+            margin: 10px 0 0;
+            padding: 1px 13px 0;
+            background-color: #ffffff;
+        }
+            /* Inside Main Left Projects */
+            .Main_Left_Projects_Logo{
+
+            }
+            .Main_Left_Projects_Text{
+                font-size: 10px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                text-align: center;
+                color: #979797;
+            }
+
+        .Main_Left_Contribution{
+            display: flex;
+            flex-direction: column;
+            margin: 10px 0 0;
+            padding: 1px 13px 0;
+            background-color: #ffffff;
+        }
+            /* Inside Main Left Contribution */
+            .Main_Left_Contribution_Logo{
+
+            }
+            .Main_Left_Contribution_Text{
+                font-size: 10px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                text-align: center;
+                color: #979797;
+            }
+        .Main_Left_Journey{
+            display: flex;
+            flex-direction: column;
+            margin: 10px 0 0;
+            padding: 1px 13px 0;
+            background-color: #ffffff;
+        }
+            /* Inside Main Left Journey */
+            .Main_Left_Journey_Logo{
+
+            }
+            .Main_Left_Journey_Text{
+                font-size: 10px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                text-align: center;
+                color: #979797;
+            }
+        .Main_Left_Event{
+            display: flex;
+            flex-direction: column;
+            margin: 10px 0 0;
+            padding: 1px 13px 0;
+            background-color: #ffffff;
+        }
+            /* Inside Main Left Event */
+            .Main_Left_Event_Logo{
+
+            }
+            .Main_Left_Event_Text{
+                font-size: 10px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                text-align: center;
+                color: #979797;
+            }
+        .Main_Left_AccessControl{
+            display: flex;
+            flex-direction: column;
+            margin: 10px 0 0;
+            padding: 1px 13px 0;
+            background-color: #ffffff;
+        }
+            /* Inside Main Left AccessControl */
+            .Main_Left_AccessControl_Logo{
+
+            }
+            .Main_Left_AccessControl_Text{
+                font-size: 10px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                text-align: center;
+                color: #979797;
+            }
+        /* ------------------------------------------- */
+
+    /* -----------------Left Bar Ended----------------------- */
+
+    /* -----------------------Right Bar------------------ */
+    .Main_Right{
+        width: 100%;
+    }
+        /* -----------------------------------Inside Main Right---------------------- */
+
+        /* ----------------Main Right Header Section Started--------------- */
+        .Main_Right_Header{
+            padding: 26px 19.5px 27px 19px;
+            background-image: linear-gradient(to top, #909dc1, #474a68);
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+            justify-content: space-between;
+
+        }
+            /* -------------Inside Main Right Header---------- */
+            .Main_Right_Header_Left{
+
+            }
+                /* --------------Inside of Main Right Header Left Section--------- */
+                .My_Contributions{
+                    margin: 0 9.5px 6px 0;
+                    font-size: 28px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 0.93;
+                    letter-spacing: normal;
+                    text-align: left;
+                    color: #f8fafd;
+                }
+                .Description{
+                    margin: 6px 5.5px 0 0;
+                    opacity: 0.6;
+                    font-size: 13px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    text-align: left;
+                    color: #ffffff;
+                }
+                /* ----------------------------------------------- */
+            .Main_Right_Header_Right{
+                margin: 1px 0 0 45.5px;
+                padding: 11px 20px;
+                background-color: #e20074;
+            }
+            /* ------------------------------------------------------------------- */
+
+        /* ----------------Main Right Header Section Ended--------------- */
+
+        /* ----------------Main Right Nav Section Started--------------- */
+        .Main_Right_Nav{
+            background-color: #f5f6f8;
+            display: flex;
+        }
+            /* ------------Inside Main Right Nav----------- */
+            .Main_Right_Nav_Documents{
+                padding: 10px;
+                margin: 0 80px 0 0;
+                font-size: 16px;
+                font-weight: bold;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.5;
+                letter-spacing: normal;
+                text-align: left;
+                color: #4b4d61;
+            }
+            .Main_Right_Nav_Blogs{
+                padding: 10px;
+                margin: 0 80px 0 0;
+                font-size: 16px;
+                font-weight: bold;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.5;
+                letter-spacing: normal;
+                text-align: left;
+                color: #4b4d61;
+            }
+            .Main_Right_Nav_Dev_Journey{
+                padding: 10px;
+                margin: 0 80px 0 0;
+                font-size: 16px;
+                font-weight: bold;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.5;
+                letter-spacing: normal;
+                text-align: left;
+                color: #4b4d61;
+            }
+            .Main_Right_Nav_Tools{
+                padding: 10px;
+                margin: 0 80px 0 0;
+                font-size: 16px;
+                font-weight: bold;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.5;
+                letter-spacing: normal;
+                text-align: left;
+                color: #4b4d61;
+            }
+        /* ----------------Main Right Nav Section Ended--------------- */
+
+    /* ---------------------Right Bar Ended------------------------- */
