@@ -29,7 +29,7 @@ src: url(../assets/fonts/Roboto/Roboto-Regular.ttf) format("truetype");
     flex-direction: row;
     align-items: center;
     justify-content: space-between; 
-    padding: 19px 180px 19px 180px;
+    padding: 19px 190px 19px 180px;
 
 }
     /* ----Navigation_Top_Left---- */
@@ -64,6 +64,7 @@ src: url(../assets/fonts/Roboto/Roboto-Regular.ttf) format("truetype");
         font-size: 12px;
         font-weight: bold;
         color: #4b4d61;
+        flex-shrink: 0;
     }
         /* -------Inside of Navigation_Top_Centre------- */
         .Navigation_Top_Centre_Content{ 
@@ -187,11 +188,13 @@ src: url(../assets/fonts/Roboto/Roboto-Regular.ttf) format("truetype");
                     font-size: 28px;
                     line-height: 0.93;
                     color: #f8fafd;
+                    padding-right: 5px ;
                     padding-bottom: 5px;
                 }
                 .Description{
                     opacity: 60%;
                     font-size: 13px;
+                    padding-right: 5px ;
                     color: #ffffff;
                 }
                 /* ----------------------------------------------- */
@@ -202,13 +205,48 @@ src: url(../assets/fonts/Roboto/Roboto-Regular.ttf) format("truetype");
                 border: 1px;
                 outline: none;
                 cursor: pointer;
+                flex-shrink: 0;
             }
             .New_Section{
                 display: flex;
+                flex-direction: row;
                 align-items: center;
             }
             .New_Section img{
                 display: flex;
+            }
+            #newButtonClickedBox{
+                position: absolute;
+                top: 135px;
+                right: 196px;
+                overflow: hidden;
+                z-index: 2;
+                /* visibility: hidden; */
+                /* border: 5px solid green; */
+                width: 240px;
+                height: 291px;
+                background-color: hotpink;
+                /* margin: 79px 197px 46px 151px; */
+                padding: 21px 9px 12px 11px;
+                box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.15);
+                background-color: #ffffff;
+                display: none;
+            }
+            .newButtonClickedBox_Box{
+                width: 100%;
+                height: 40px;
+            }
+            .newButtonClickedBox_Box_TextBox{
+                height: 40px;
+                display: flex;
+                align-items: center;
+                padding-left: 10px;
+                margin: 0 0 0 20px;
+                font-family: Helvetica;
+                font-size: 14px;
+                font-weight: bold;
+                line-height: 2.86;
+                color: #4b4d61;
             }
             /* ------------------------------------------------------------------- */
 
@@ -237,8 +275,6 @@ src: url(../assets/fonts/Roboto/Roboto-Regular.ttf) format("truetype");
             }
         /* ----------------Main Right Nav Section Ended--------------- */
         .Main_Right_Other{
-            /* overflow-y: scroll; */
-            /* margin-top: 165px; */
             margin-left: 120px;
             width:77.6%;
         }
@@ -278,7 +314,6 @@ src: url(../assets/fonts/Roboto/Roboto-Regular.ttf) format("truetype");
             overflow-x: auto;
             display: flex;
             flex-direction: column;
-            align-items: center;
         }
         .Main_Right_Table{
         }
@@ -361,6 +396,9 @@ src: url(../assets/fonts/Roboto/Roboto-Regular.ttf) format("truetype");
                 }
         /* ------------------------Main Right Table Ended---------------- */
         .Main_Right_ShowMore{
+            width: 100%;
+            display: flex;
+            justify-content: center;
             margin: 20px 0;
             font-size: 13px;
             line-height: 1.5;
