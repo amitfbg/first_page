@@ -3,9 +3,10 @@
     box-sizing: border-box;
     font-family: Helvetica;
 }
-/* body{
-    border: 0.1px solid #4b4d61;
-} */
+body{
+    height:100vh;
+}
+
 
 @font-face {
     font-family: Helvetica;
@@ -17,8 +18,11 @@ font-family: Roboto;
 src: url(../assets/fonts/Roboto/Roboto-Regular.ttf) format("truetype");
 }
 
-/* ------------Navigation_Top Starts---------- */
+
+/* -----------Navigation_Top Starts---------- */
 .Navigation_Top{
+    width: 100%;
+    height: 10%;
     background-color: aliceblue;
     display: flex;
     margin:auto;
@@ -36,6 +40,7 @@ src: url(../assets/fonts/Roboto/Roboto-Regular.ttf) format("truetype");
         font-size: 20px;
         font-weight: 900;
         letter-spacing: 1px;
+        padding-right: 10px;
     }
         /* -------Inside of Navigation_Top_Centre------- */
         .Navigation_Top_Left_logo{
@@ -61,10 +66,8 @@ src: url(../assets/fonts/Roboto/Roboto-Regular.ttf) format("truetype");
         color: #4b4d61;
     }
         /* -------Inside of Navigation_Top_Centre------- */
-        .Navigation_Top_Centre_LifeCycle,.Navigation_Top_Centre_StarterKits,.Navigation_Top_Centre_DevJourney,.Navigation_Top_Centre_Resources{ 
+        .Navigation_Top_Centre_Content{ 
             padding-right: 30px;
-        }
-        .Navigation_Top_Centre_Community{
         }
         /* ----------------------------------------------- */
 
@@ -99,8 +102,10 @@ src: url(../assets/fonts/Roboto/Roboto-Regular.ttf) format("truetype");
 
 /* -----  Main Section which conatins left bar and Right bar  starts------- */
 .Main_Section{
-    display: flex;
-    flex-direction: row;
+     height: 90%;
+     display: flex;
+     flex-direction: row;
+     flex-grow: 1;
 }
 
     /* ----------------------Left Bar--------------- */
@@ -120,43 +125,33 @@ src: url(../assets/fonts/Roboto/Roboto-Regular.ttf) format("truetype");
             font-size: 12px;
             font-weight: bold;
         }
-        .Main_Left_Projects,.Main_Left_Journey,.Main_Left_AccessControl,.Main_Left_Event,.Main_Left_Contribution{
+        .Main_Left_Box{
             display: flex;
             flex-direction: column;
             padding: 8px 12px 7px;
             background-color: #ffffff;
+            cursor: pointer;
         }
             /* Inside Main Left Logo Part Spacing */
-            .Main_Left_Projects_Logo,.Main_Left_Contribution_Logo,.Main_Left_Journey_Logo,.Main_Left_Event_Logo,.Main_Left_AccessControl_Logo{
+            .Main_Left_Box_Logo{
                 padding: 5px 5px 1px 5px;
             }
             /* Inside Main Left Logo Image Size */
-            .Main_Left_Projects_Logo img,.Main_Left_Contribution_Logo img,.Main_Left_Journey_Logo img,.Main_Left_Event_Logo img,.Main_Left_AccessControl_Logo img{
+            .Main_Left_Box_Logo img{
                 padding: 2px 3px;
                 height: 24px;
                 width: 24px;
             }
-            .Main_Left_Projects_Text{               
-            }
 
-        .Main_Left_Contribution{
+        .Contributions{
             color: #e20074;
             background-color:#fce6f1;
         }
             /* Inside Main Left Contribution */
-            .Main_Left_Contribution_Text{
+            .Text_Contributions{
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
-            }
-            /* Inside Main Left Journey */
-            .Main_Left_Journey_Text{
-            }
-            /* Inside Main Left Event */
-            .Main_Left_Event_Text{
-            }
-            /* Inside Main Left AccessControl */
-            .Main_Left_AccessControl_Text{
             }
         /* ------------------------------------------- */
 
@@ -165,8 +160,13 @@ src: url(../assets/fonts/Roboto/Roboto-Regular.ttf) format("truetype");
     /* -----------------------Right Bar------------------ */
     .Main_Right{
         width: 100%;
+        overflow-y: scroll;
     }
         /* -----------------------------------Inside Main Right---------------------- */
+        .Main_Right_Header_Nav{
+            display: flex;
+            flex-direction: column;
+        }
 
         /* ----------------Main Right Header Section Started--------------- */
         .Main_Right_Header{
@@ -174,7 +174,7 @@ src: url(../assets/fonts/Roboto/Roboto-Regular.ttf) format("truetype");
             background-image: linear-gradient(to top, #909dc1, #474a68);
             display: flex;
             flex-direction: row;
-            align-items: flex-end;
+            align-items: center;
             justify-content: space-between;
 
         }
@@ -196,13 +196,12 @@ src: url(../assets/fonts/Roboto/Roboto-Regular.ttf) format("truetype");
                 }
                 /* ----------------------------------------------- */
             .Main_Right_Header_Right{
-                display: flex;
-                align-items: center;
                 padding: 11px 20px;
                 background-color: #e20074;
-                font-size: 10px;
                 color: white;
-                font-weight: 400;
+                border: 1px;
+                outline: none;
+                cursor: pointer;
             }
             .New_Section{
                 display: flex;
@@ -227,82 +226,77 @@ src: url(../assets/fonts/Roboto/Roboto-Regular.ttf) format("truetype");
             color: #4b4d61;
         }
             /* ------------Inside Main Right Nav----------- */
-            .Main_Right_Nav_Documents{
+            .Documents{
                 padding: 23px 40px;
                 color: #e20074;
                 background-color: white;
             }
-            .Main_Right_Nav_Blogs,.Main_Right_Nav_Dev_Journey,.Main_Right_Nav_Tools{
-                padding: 23px 40px;               
+            .Main_Right_Nav_Box{
+                padding: 23px 40px;  
+                cursor: pointer;             
             }
         /* ----------------Main Right Nav Section Ended--------------- */
+        .Main_Right_Other{
+            /* overflow-y: scroll; */
+            /* margin-top: 165px; */
+            margin-left: 120px;
+            width:77.6%;
+        }
         .Main_Right_Contribution{
-            /* padding: 30px 0 20px 125px; */
+
             display: flex;
             font-size: 12px;
             line-height: 1.5;
             text-align: left;
             font-weight: bold;
             color: #4b4d61;
+            /* margin-right: 30px; */
+            
         }
             /* Inside Right Contribution */
-            .Main_Right_Contribution_MyContribution{
-                padding: 30px 30px 20px 125px;
-                opacity: 0.5;
+            .Main_Right_Contribution_Box{
+                padding: 50px 0px 30px 0px;
+                margin-right: 30px;
+                cursor: pointer;
             }
-            .Main_Right_Contribution_AwaitingApproval{
-                padding: 30px 30px 20px 0px;
-                opacity: 0.5;
-            }
-            .Main_Right_Contribution_AllDocuments{
+            .AllDocuments{
+                /* padding-right: 0; */
                 color:#e20074;
-                padding: 30px 0px 20px 0px;
                 border-bottom: 2px solid#e20074;
             }
         /* ---------------------------- */
         /*  ---------------Line Division----------- */
         .Main_Right_Line_Division{
-            margin: 0 180px 20px 120px;
             border: 0.5px solid #dde4f2;
             border-collapse: collapse;
+            margin-bottom: 30px;
         }
         /* ----------------------------------------- */
 
         /* ---------Main Right Table---------- */
         .Main_Right_Table_Section{
-            margin: 0 180px 0px 120px;           
+            overflow-x: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         .Main_Right_Table{
-            width: 100%;
         }
-        .Main_Right_Table_Row_Heading{
-            opacity: 0.6;
-            font-size: 10px;
+        .Main_Right_Table_Row_Heading_Box{
+            font-size: 12px;
             font-weight: bold;
             text-align: left;
             color: #4b4d61;
-            /* padding-bottom: 10px; */
+            padding-bottom: 10px;
         }
-            .Main_Right_Table_Row_Heading_Document{
+            .Document{
                 padding-left: 50px;
-                padding-bottom: 10px;
             }
-            .Main_Right_Table_Row_Heading_Stages{
-                padding-bottom: 10px;
-            }
-            .Main_Right_Table_Row_Heading_Owned{
-                padding-bottom: 10px;
-            }
-            .Main_Right_Table_Row_Heading_Edited{
-                padding-bottom: 10px;
-            }
-            .Main_Right_Table_Row_Heading_Published{
-                padding-bottom: 10px;
-            }
+            
         .Main_Right_Table_Rows{
             box-shadow: 0 2px 5px 0 #d4dbe7;
             background-color: #ffffff;
-            font-size: 10px;
+            font-size: 14px;
             font-weight: bold;
             text-align: left;
             color: #4b4d61;
@@ -310,6 +304,7 @@ src: url(../assets/fonts/Roboto/Roboto-Regular.ttf) format("truetype");
             .Main_Right_Table_Column_DocumentTitle{
                 display: flex;
                 align-items: center;
+                text-align: left;
                 padding: 20px 0px 20px 20px;
                 line-height: 1.43;
                 margin-right: 50px;
@@ -324,34 +319,36 @@ src: url(../assets/fonts/Roboto/Roboto-Regular.ttf) format("truetype");
                 border-radius: 60px;
                 background-color: #ebf0f8;
                 text-align: center;
-                font-size: 10px;
+                font-size: 12px;
                 line-height: 1.5;
-                margin-right: 70px;
+                margin-right: 50px;
             }
             .Main_Right_Table_Column_Stages___{
                 padding-left: 15px;
                 opacity: 20%;
             }
             .Main_Right_Table_Column_OwnedBy{
+                width: 100%;
                 line-height: 1.43;
                 margin-right: 50px;
             }
             .Main_Right_Table_Column_LastEdited{
-                margin-right: 60px;
+                width: 100%;
+                margin-right: 50px;
             }
             .Main_Right_Table_Column_Published{
+                width: 100%;
                 display: flex;
                 align-items: flex-end;
                 justify-content: space-between;
-                font-size: 11px;
+                font-size: 12px;
             }
             .Main_Right_Table_Column_Published_Text_Pink{
                 color:#e20074;
-                border-bottom: 0.1px solid #e20074;
+                text-decoration: underline;
             }
             .Main_Right_Table_Column_Published_Logo_Text{
                 display: flex;
-                /* align-items: flex-end; */
                 align-items: center;
             }
                 .Main_Right_Table_Column_Published_Logo{
@@ -364,11 +361,11 @@ src: url(../assets/fonts/Roboto/Roboto-Regular.ttf) format("truetype");
                 }
         /* ------------------------Main Right Table Ended---------------- */
         .Main_Right_ShowMore{
-            margin: 20px 0px 30px 589px;
+            margin: 20px 0;
             font-size: 13px;
             line-height: 1.5;
-            text-align: left;
             color: #e20074;
+            cursor: pointer;
         }
 
     /* ---------------------Right Bar Ended------------------------- */
