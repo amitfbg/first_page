@@ -7,6 +7,14 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+    <main class="popup-container">
+        <section class="popup">Welcome to Dev Center
+            <div class="close-popup-container">
+                <img src="./assets/close-circular-button-symbol.svg" alt="">
+            </div>
+        </section>
+        
+    </main>
     <!--========Navigation Top Starts=========-->
     <nav class="Navigation_Top">
         <!--   Navigation_Top_Left section    -->
@@ -21,15 +29,31 @@
         <div class="Navigation_Top_Centre">
             <div class="Navigation_Top_Centre_Content">LifeCycle
                 <img src="./assets/Polygon 7.png">
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                  </div>
             </div>
             <div class="Navigation_Top_Centre_Content">StarterKits</div>
             <div class="Navigation_Top_Centre_Content">DevJourney</div>
             <div class="Navigation_Top_Centre_Content">Resources
                 <img src="./assets/Polygon 7.png">
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                  </div>
             </div>
-            <div class="Navigation_Top_Centre_Content_Community">Community
+            <div class="Navigation_Top_Centre_Content">Community
                 <img src="./assets/Polygon 7.png">
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                  </div>
             </div>
+            
 
         </div>
         <!--  Navigation_Top_Right section  -->
@@ -40,7 +64,12 @@
             <div class="Navigation_Top_Right_Jason">Jason</div>
             <div class="Navigation_Top_Right_Group">
                 <img src="./assets/contact.png">
+                <div class="user_content">
+                    <div >Hello Jason</div>
+                    <button >Sign Out</button>
+                  </div>
             </div>
+            
         </div>
     </nav>
     <!--========Navigation Top Ended=========-->
@@ -51,6 +80,9 @@
 
         <!--###############   Left_Bar Starts   ###############-->
         <div class="Main_Left">
+            <div id='Main_Left_Button'>
+                <img src="./assets/menu.svg" alt="">
+            </div>
             <div class="Main_Left_Your">Your</div>
             <div class="Main_Left_Box">
                 <div class="Main_Left_Box_Logo">
@@ -77,7 +109,46 @@
                 <div class="Main_Left_Box_Text">Event</div>
             </div>
             <div class="Main_Left_Box">
-                <div class="Main_Left_Box_Logo">L</div>
+                <div class="Main_Left_Box_Logo">
+                    <img src="./assets/login.svg" alt="">
+                </div>
+                <div class="Main_Left_Box_Text">Access Control</div>
+            </div>
+        </div>
+        <!-- ----------------------------------------- -->
+        <div class="Main_Left_Large">
+            <div id='Main_Left_Large_Button'>
+                <img src="./assets/close-circular-button-symbol.svg" alt="">
+            </div>
+            <div class="Main_Left_Your">Your</div>
+            <div class="Main_Left_Box">
+                <div class="Main_Left_Box_Logo">
+                    <img src="./assets/layers.png">
+                </div>
+                <div class="Main_Left_Box_Text">Projects</div>
+            </div>
+            <div class="Main_Left_Box">
+                <div class="Main_Left_Box_Logo">
+                    <img src="./assets/charity.png">
+                </div>
+                <div class="Text_Contributions">Contributions</div>
+            </div>
+            <div class="Main_Left_Box">
+                <div class="Main_Left_Box_Logo">
+                    <img src="./assets/journey.png">
+                </div>
+                <div class="Main_Left_Box_Text">Journey</div>
+            </div>
+            <div class="Main_Left_Box">
+                <div class="Main_Left_Box_Logo">
+                    <img src="./assets/calendar.png">
+                </div>
+                <div class="Main_Left_Box_Text">Event</div>
+            </div>
+            <div class="Main_Left_Box">
+                <div class="Main_Left_Box_Logo">
+                    <img src="./assets/login.svg" alt="">
+                </div>
                 <div class="Main_Left_Box_Text">Access Control</div>
             </div>
         </div>
@@ -98,34 +169,34 @@
                     </div>
                 </div>
                 <!-- Right Part of Header Section of Main Right which is new Button -->
+                <!-- <button id="Main_Right_Header_Right" class="Main_Right_Header_Right" onclick="showpopupvox()"> -->
                 <button id="Main_Right_Header_Right" class="Main_Right_Header_Right">
                     <div class="New_Section">
                         <div><img src="./assets/plus.svg" alt=""></div>
                         <div>&nbsp; New &nbsp; &nbsp;</div>
                         <div><img src="./assets/down-filled-triangular-arrow.svg" alt=""></div>      
                     </div>
+                    <div id="newButtonClickedBox">
+                        <div class="newButtonClickedBox_Box">
+                            <div class="newButtonClickedBox_Box_TextBox">Document</div>
+                        </div>
+                        <div class="newButtonClickedBox_Box BlogPostParent">
+                            <div class="newButtonClickedBox_Box_TextBox BlogPostChild">Blog Post</div>
+                        </div>
+                        <div class="newButtonClickedBox_Box">
+                            <div class="newButtonClickedBox_Box_TextBox">Dev Journey</div>
+                        </div>
+                        <div class="newButtonClickedBox_Box">
+                            <div class="newButtonClickedBox_Box_TextBox">Tool</div>
+                        </div>
+                        <div class="newButtonClickedBox_Box">
+                            <div class="newButtonClickedBox_Box_TextBox">Onboard Linked Document</div>
+                        </div>
+                        <div class="newButtonClickedBox_Box">
+                            <div class="newButtonClickedBox_Box_TextBox">Onboard-GitLab-Document</div>
+                        </div>
+                    </div>
                 </button>
-                <div id="newButtonClickedBox">
-                    <div class="newButtonClickedBox_Box">
-                        <div class="newButtonClickedBox_Box_TextBox">Document</div>
-                    </div>
-                    <div class="newButtonClickedBox_Box">
-                        <div class="newButtonClickedBox_Box_TextBox">Blog Post</div>
-                    </div>
-                    <div class="newButtonClickedBox_Box">
-                        <div class="newButtonClickedBox_Box_TextBox">Dev Journey</div>
-                    </div>
-                    <div class="newButtonClickedBox_Box">
-                        <div class="newButtonClickedBox_Box_TextBox">Tool</div>
-                    </div>
-                    <div class="newButtonClickedBox_Box">
-                        <div class="newButtonClickedBox_Box_TextBox">Onboard Linked Document</div>
-                    </div>
-                    <div class="newButtonClickedBox_Box">
-                        <div class="newButtonClickedBox_Box_TextBox">Onboard-GitLab-Document</div>
-                    </div>
-                </div>
-                
                 
             </header>
             <nav class="Main_Right_Nav">
